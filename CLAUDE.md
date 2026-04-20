@@ -1,3 +1,11 @@
+## Project Configuration
+
+- **Language**: TypeScript
+- **Package Manager**: pnpm
+- **Add-ons**: tailwindcss
+
+---
+
 # Projet Site — Instructions
 
 ## Stack technique
