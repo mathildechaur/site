@@ -1,1 +1,79 @@
 @import 'tailwindcss';
+
+:root {
+	--color-custom-pink: #ffc6ff;
+}
+
+/* Override pink colors with custom pink */
+.bg-pink-400,
+.bg-pink-500,
+.bg-pink-600 {
+	background-color: var(--color-custom-pink);
+}
+
+.text-pink-400,
+.text-pink-300,
+.text-pink-100 {
+	color: var(--color-custom-pink);
+}
+
+.from-pink-400,
+.from-pink-500,
+.from-pink-600 {
+	--tw-gradient-from: var(--color-custom-pink);
+}
+
+.to-pink-400,
+.to-pink-500,
+.to-pink-600 {
+	--tw-gradient-to: var(--color-custom-pink);
+}
+
+.border-pink-500 {
+	border-color: var(--color-custom-pink);
+}
+
+.hover\:border-pink-500:hover {
+	border-color: var(--color-custom-pink);
+}
+
+.group-hover\:text-pink-400:hover {
+	color: var(--color-custom-pink);
+}
+
+.shadow-pink-500 {
+	--tw-shadow-color: var(--color-custom-pink);
+}
+
+.hover\:shadow-pink-500\/50:hover {
+	--tw-shadow-color: rgba(255, 198, 255, 0.5);
+}
+
+/* Text color on pink backgrounds */
+.bg-pink-400,
+.bg-pink-500,
+.bg-pink-600 {
+	color: #190b28;
+}
+
+/* Button with pink background */
+button.bg-pink-400,
+button.bg-pink-500,
+button.bg-pink-600 {
+	color: #190b28;
+}
+
+/* Gradient buttons with pink */
+.from-pink-500,
+.from-pink-600,
+.to-pink-500,
+.to-pink-600 {
+	color: #190b28;
+}
+
+/* Ensure all text in pink elements is dark */
+.bg-pink-400 *,
+.bg-pink-500 *,
+.bg-pink-600 * {
+	color: #190b28;
+}
