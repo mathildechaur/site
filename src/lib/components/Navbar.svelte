@@ -63,12 +63,11 @@
 	<div class="max-w-7xl mx-auto flex items-center justify-between">
 		<!-- Logo -->
 		<a href="/" class="flex items-center gap-3 group hover:opacity-80 transition-opacity" on:click={closeMobileMenu}>
-			<div
-				class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-blue-600 flex items-center justify-center font-black text-white group-hover:scale-110 transition-transform"
-			>
-				P
-			</div>
-			<span class="font-black text-xl hidden sm:inline">POLLARIS</span>
+			<img
+				src="/assets/logo-pollaris.jpg"
+				alt="Pollaris Logo"
+				class="h-[3.25rem] w-[3.25rem] rounded-full object-cover group-hover:scale-110 transition-transform"
+			/>
 		</a>
 
 		<!-- Desktop Nav Links -->
