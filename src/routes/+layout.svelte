@@ -1,13 +1,13 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/fivicon.png';
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/png" href={favicon} />
 	<title>Pollaris - La radio qui vous guide</title>
 </svelte:head>
 
