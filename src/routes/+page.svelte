@@ -49,11 +49,12 @@
 
 			<!-- Emission Card (3) -->
 			<PodcastCard
-				title="VOICES"
+				title="Micro trottoir"
 				subtitle="Stories & Talks"
 				color="bg-pink-500"
-				emoji="🎤"
 				dataAnimate={true}
+				href="https://www.mixcloud.com/Infocoml3/pollaris-webradio-micro-trottoir-vss-mathilde-chaurreau/"
+				image="/assets/micro-trottoir-minia.jpg"
 			/>
 
 			<!-- Show Card (4) -->
