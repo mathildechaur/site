@@ -3,7 +3,33 @@
 	import gsap from 'gsap';
 
 	let navbar: HTMLElement;
+	let mobileMenu: HTMLElement;
 	let isScrolled = false;
+	let isMobileMenuOpen = false;
+
+	const toggleMobileMenu = () => {
+		isMobileMenuOpen = !isMobileMenuOpen;
+		if (mobileMenu) {
+			gsap.to(mobileMenu, {
+				maxHeight: isMobileMenuOpen ? 200 : 0,
+				opacity: isMobileMenuOpen ? 1 : 0,
+				duration: 0.3,
+				ease: 'power2.out'
+			});
+		}
+	};
+
+	const closeMobileMenu = () => {
+		isMobileMenuOpen = false;
+		if (mobileMenu) {
+			gsap.to(mobileMenu, {
+				maxHeight: 0,
+				opacity: 0,
+				duration: 0.3,
+				ease: 'power2.out'
+			});
+		}
+	};
 
 	onMount(() => {
 		const handleScroll = () => {
@@ -36,33 +62,72 @@
 >
 	<div class="max-w-7xl mx-auto flex items-center justify-between">
 		<!-- Logo -->
-		<div class="flex items-center gap-3 group">
+		<a href="/" class="flex items-center gap-3 group hover:opacity-80 transition-opacity" on:click={closeMobileMenu}>
 			<div
 				class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-blue-600 flex items-center justify-center font-black text-white group-hover:scale-110 transition-transform"
 			>
 				P
 			</div>
 			<span class="font-black text-xl hidden sm:inline">POLLARIS</span>
-		</div>
+		</a>
 
-		<!-- Nav Links -->
+		<!-- Desktop Nav Links -->
 		<div class="hidden md:flex gap-8">
-			<a href="#emissions" class="text-slate-300 hover:text-pink-400 transition-colors font-medium">
-				Émissions
+			<a href="/" class="text-slate-300 hover:text-pink-400 transition-colors font-medium">
+				Accueil
 			</a>
-			<a href="#podcasts" class="text-slate-300 hover:text-pink-400 transition-colors font-medium">
-				Podcasts
-			</a>
-			<a href="#equipe" class="text-slate-300 hover:text-pink-400 transition-colors font-medium">
-				Équipe
+			<a href="/ligne-editoriale" class="text-slate-300 hover:text-pink-400 transition-colors font-medium">
+				Ligne éditoriale
 			</a>
 		</div>
 
-		<!-- CTA Button -->
-		<button
-			class="px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-200"
-		>
-			En direct
-		</button>
+		<div class="flex items-center gap-4">
+			<!-- CTA Button (Hidden on small screens) -->
+			<button
+				class="hidden sm:block px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-200"
+			>
+				En direct
+			</button>
+
+			<!-- Mobile Menu Button -->
+			<button
+				on:click={toggleMobileMenu}
+				class="md:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-center"
+				aria-label="Toggle menu"
+			>
+				<div class="w-6 h-0.5 bg-slate-300 transition-all duration-300" style="transform: {isMobileMenuOpen ? 'rotate(45deg) translateY(8px)' : 'rotate(0)'}"></div>
+				<div class="w-6 h-0.5 bg-slate-300 transition-all duration-300" style="opacity: {isMobileMenuOpen ? '0' : '1'}"></div>
+				<div class="w-6 h-0.5 bg-slate-300 transition-all duration-300" style="transform: {isMobileMenuOpen ? 'rotate(-45deg) translateY(-8px)' : 'rotate(0)'}"></div>
+			</button>
+		</div>
+	</div>
+
+	<!-- Mobile Menu -->
+	<div
+		bind:this={mobileMenu}
+		class="md:hidden fixed left-0 right-0 top-16 bg-slate-900/95 backdrop-blur border-b border-slate-700 overflow-hidden"
+		style="max-height: 0; opacity: 0;"
+	>
+		<div class="px-4 py-4 space-y-3">
+			<a
+				href="/"
+				class="block text-slate-300 hover:text-pink-400 transition-colors font-medium py-2 px-3 rounded-lg hover:bg-slate-800"
+				on:click={closeMobileMenu}
+			>
+				Accueil
+			</a>
+			<a
+				href="/ligne-editoriale"
+				class="block text-slate-300 hover:text-pink-400 transition-colors font-medium py-2 px-3 rounded-lg hover:bg-slate-800"
+				on:click={closeMobileMenu}
+			>
+				Ligne éditoriale
+			</a>
+			<button
+				class="w-full px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-200 mt-2"
+			>
+				En direct
+			</button>
+		</div>
 	</div>
 </nav>

@@ -86,11 +86,11 @@
 	});
 </script>
 
-<section class="relative py-24 px-0 md:px-0 bg-gradient-to-b from-slate-900 to-slate-900">
+<section class="relative py-16 sm:py-20 md:py-24 px-0 bg-gradient-to-b from-slate-900 to-slate-900">
 	<!-- Title -->
-	<div class="text-center mb-20 px-4">
-		<h2 class="text-5xl md:text-7xl font-black text-white mb-4">ARTISTES</h2>
-		<div class="w-32 h-1.5 bg-gradient-to-r from-pink-500 to-blue-600 mx-auto"></div>
+	<div class="text-center mb-12 sm:mb-16 md:mb-20 px-4">
+		<h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white mb-4">ARTISTES</h2>
+		<div class="w-24 sm:w-32 h-1.5 bg-gradient-to-r from-pink-500 to-blue-600 mx-auto"></div>
 	</div>
 
 	<!-- Carousel Container -->
@@ -98,7 +98,7 @@
 		<!-- Scroll Container -->
 		<div
 			bind:this={scrollContainer}
-			class="flex gap-12 md:gap-16 overflow-x-auto pb-8 px-24 md:px-32 cursor-grab active:cursor-grabbing"
+			class="flex gap-6 sm:gap-8 md:gap-12 lg:gap-16 overflow-x-auto pb-8 px-4 sm:px-6 md:px-24 lg:px-32 cursor-grab active:cursor-grabbing"
 			style="scroll-behavior: smooth; scroll-padding: 1rem;"
 		>
 				{#each patternItems as patternItem, idx (idx)}
@@ -109,7 +109,7 @@
 							class="flex-shrink-0 group/item"
 						>
 							<div
-								class="relative w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 cursor-pointer bg-gradient-to-br from-slate-800 to-slate-900"
+								class="relative w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 cursor-pointer bg-gradient-to-br from-slate-800 to-slate-900"
 							>
 								<img
 									src={patternItem.items[0].image}
@@ -118,11 +118,11 @@
 								/>
 								<!-- Overlay -->
 								<div
-									class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8"
+									class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 sm:pb-8"
 								>
 									<div class="text-center">
-										<p class="text-white font-bold text-lg md:text-xl">{patternItem.items[0].name}</p>
-										<p class="text-pink-400 text-sm md:text-base">{patternItem.items[0].role}</p>
+										<p class="text-white font-bold text-base sm:text-lg md:text-xl">{patternItem.items[0].name}</p>
+										<p class="text-pink-400 text-xs sm:text-sm md:text-base">{patternItem.items[0].role}</p>
 									</div>
 								</div>
 							</div>
@@ -131,7 +131,7 @@
 						<!-- CARRÉ 2x2 DE PETITS CERCLES -->
 						<div
 							data-artist
-							class="flex-shrink-0 grid grid-cols-2 gap-6 md:gap-8"
+							class="flex-shrink-0 grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8"
 							style="width: auto; height: auto;"
 						>
 							{#each patternItem.items as artist (artist.name)}
@@ -139,7 +139,7 @@
 									class="group/small"
 								>
 									<div
-										class="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer bg-gradient-to-br from-slate-800 to-slate-900"
+										class="relative w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer bg-gradient-to-br from-slate-800 to-slate-900"
 									>
 										<img
 											src={artist.image}
@@ -148,11 +148,11 @@
 										/>
 										<!-- Overlay -->
 										<div
-											class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover/small:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4"
+											class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover/small:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-3 sm:pb-4"
 										>
 											<div class="text-center">
-												<p class="text-white font-bold text-sm">{artist.name}</p>
-												<p class="text-pink-400 text-xs">{artist.role}</p>
+												<p class="text-white font-bold text-xs sm:text-sm md:text-base">{artist.name}</p>
+												<p class="text-pink-400 text-xs sm:text-xs md:text-sm">{artist.role}</p>
 											</div>
 										</div>
 									</div>

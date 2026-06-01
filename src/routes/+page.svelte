@@ -25,7 +25,7 @@
 	<HeroSection />
 
 	<!-- Main Content -->
-	<main class="relative px-4 md:px-8 py-16">
+	<main class="relative px-3 sm:px-4 md:px-8 py-12 sm:py-16">
 		<!-- Bento Grid -->
 		<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-max">
 			<!-- Large Featured Card (1) -->

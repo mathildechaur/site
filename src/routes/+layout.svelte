@@ -11,9 +11,11 @@
 	<title>Pollaris - La radio qui vous guide</title>
 </svelte:head>
 
-<div class="bg-slate-900 text-white">
+<div class="bg-slate-900 text-white min-h-screen">
 	<Navbar />
-	{@render children()}
+	<div class="pt-16 sm:pt-20">
+		{@render children()}
+	</div>
 </div>
 
 <style>

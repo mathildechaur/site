@@ -50,26 +50,16 @@
 
 	<!-- Content -->
 	<div class="relative z-10 text-center px-4 max-w-4xl">
-		<div class="mb-8 inline-block">
-			<span
-				class="inline-block text-6xl animate-bounce"
-				style="animation-duration: 2s"
-			>
-				🎙️
-			</span>
-		</div>
-
-		<h1
+		<img
 			bind:this={titleRef}
-			class="text-6xl md:text-8xl font-black text-white mb-6 leading-tight"
-			style="font-family: system-ui, -apple-system, sans-serif; letter-spacing: -2px;"
-		>
-			POLLARIS
-		</h1>
+			src="/assets/header.png"
+			alt="Pollaris"
+			class="w-full max-w-sm sm:max-w-md md:max-w-2xl h-auto mx-auto mb-4 sm:mb-6"
+		/>
 
 		<p
 			bind:this={subtitleRef}
-			class="text-xl md:text-3xl text-slate-300 font-light mb-12"
+			class="text-lg sm:text-xl md:text-3xl text-slate-300 font-light mb-8 sm:mb-12"
 		>
 			La radio qui vous guide
 		</p>
