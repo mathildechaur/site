@@ -37,16 +37,8 @@
 	bind:this={hero}
 	class="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800"
 >
-	<!-- Background elements -->
-	<div class="absolute inset-0 overflow-hidden">
-		<div
-			class="absolute top-20 right-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-screen opacity-20 blur-3xl animate-pulse"
-		></div>
-		<div
-			class="absolute bottom-40 left-20 w-96 h-96 bg-blue-600 rounded-full mix-blend-screen opacity-20 blur-3xl animate-pulse"
-			style="animation-delay: 1s"
-		></div>
-	</div>
+	<!-- Background -->
+	<div class="absolute inset-0 bg-slate-900"></div>
 
 	<!-- Content -->
 	<div class="relative z-10 text-center px-4 max-w-4xl">
