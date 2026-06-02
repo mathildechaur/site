@@ -68,18 +68,34 @@
 
 			<!-- Call to Action (5) -->
 			<div
-				class="md:col-span-2 bg-linear-to-r from-pink-500 to-pink-600 rounded-2xl p-12 text-white shadow-2xl overflow-hidden relative group"
+				class="md:col-span-2 bg-pink-500 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 group"
 				data-animate
 			>
-				<div class="absolute inset-0 bg-linear-to-r from-blue-600 to-blue-700 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-				<div class="relative z-10">
-					<h3 class="text-3xl md:text-4xl font-black mb-4">Crée ton podcast</h3>
-					<p class="text-pink-100 text-lg mb-6">Rejoins notre communauté de créateurs</p>
-					<button
-						class="bg-white text-pink-600 font-bold px-8 py-3 rounded-xl hover:scale-105 transition-transform duration-200 shadow-lg"
-					>
-						Démarrer
-					</button>
+				<div class="flex items-stretch h-full">
+					<!-- Image on the left -->
+					<div class="w-1/3 md:w-2/5 flex-shrink-0 overflow-hidden">
+						<img src="/assets/interview.jpg" alt="interview Isabelle Proust Sauviac" class="w-full h-full object-cover" />
+					</div>
+
+					<!-- Content on the right -->
+					<div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
+						<div>
+							<p class="text-white/70 text-xs font-semibold uppercase tracking-wider mb-1">
+								Interview
+							</p>
+							<h3 class="text-2xl md:text-3xl font-black leading-tight">
+								Isabelle Proust Sauviac
+							</h3>
+						</div>
+
+						<button
+							class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
+						>
+							<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M8 5v14l11-7z" />
+							</svg>
+						</button>
+					</div>
 				</div>
 			</div>
 
