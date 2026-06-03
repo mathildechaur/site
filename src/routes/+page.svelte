@@ -67,8 +67,11 @@
 			/>
 
 			<!-- Call to Action (5) -->
-			<div
-				class="md:col-span-2 bg-pink-500 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 group"
+			<a
+				href="https://www.mixcloud.com/Infocoml3/pollaris-webradio-interview-isabelle-proust-vss-mathilde-chaurreau/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="md:col-span-2 bg-pink-500 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 group block"
 				data-animate
 			>
 				<div class="flex items-stretch h-full">
@@ -88,35 +91,19 @@
 							</h3>
 						</div>
 
-						<button
-							class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
-						>
-							<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
-								<path d="M8 5v14l11-7z" />
-							</svg>
-						</button>
+						<div class="flex items-center gap-3">
+							<button
+								class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
+							>
+								<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M8 5v14l11-7z" />
+								</svg>
+							</button>
+							<span class="text-xs font-semibold text-white/60">PLAY</span>
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<!-- Recent Episodes (6) -->
-			<div class="bg-slate-800/50 backdrop-blur rounded-2xl p-6 border border-slate-700" data-animate>
-				<p class="text-xs font-semibold text-slate-400 mb-4">DERNIERS</p>
-				<div class="space-y-4">
-					<div class="group cursor-pointer">
-						<p class="text-white font-bold group-hover:text-pink-400 transition-colors">Épisode 15</p>
-						<p class="text-xs text-slate-400">Hier</p>
-					</div>
-					<div class="group cursor-pointer">
-						<p class="text-white font-bold group-hover:text-pink-400 transition-colors">Épisode 14</p>
-						<p class="text-xs text-slate-400">Il y a 2 jours</p>
-					</div>
-					<div class="group cursor-pointer">
-						<p class="text-white font-bold group-hover:text-pink-400 transition-colors">Épisode 13</p>
-						<p class="text-xs text-slate-400">Il y a 1 semaine</p>
-					</div>
-				</div>
-			</div>
+			</a>
 		</div>
 	</main>
 
