@@ -35,13 +35,13 @@
 
 <div
 	bind:this={hero}
-	class="relative h-[65vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800"
+	class="relative min-h-[65vh] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800"
 >
 	<!-- Background -->
 	<div class="absolute inset-0 bg-slate-900"></div>
 
 	<!-- Content -->
-	<div class="relative z-10 text-center px-4 max-w-4xl pb-20">
+	<div class="relative z-10 text-center px-4 max-w-4xl flex-1 flex flex-col items-center justify-center">
 		<img
 			bind:this={titleRef}
 			src="/assets/header.png"
