@@ -109,4 +109,28 @@
 
 	<!-- Artist Carousel Section -->
 	<ArtistCarousel />
+
+	<!-- Social Networks Section -->
+	<section class="py-16 sm:py-20 md:py-24 px-3 sm:px-4 md:px-8 bg-gradient-to-b from-slate-900 to-slate-800">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12 sm:mb-16">
+				<h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">NOS RÉSEAUX</h2>
+				<div class="w-24 sm:w-32 h-1.5 bg-gradient-to-r from-pink-500 to-blue-600 mx-auto"></div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
+				<a href="https://www.instagram.com/pollaris.webradio/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+					<h3 class="text-3xl sm:text-4xl font-black mb-3">📸</h3>
+					<h4 class="text-2xl font-black mb-3">Instagram</h4>
+					<p class="text-white/90">Suivez nos actualités, stories et contenus visuels</p>
+				</a>
+
+				<a href="https://mastodon.social/@pollariswebradio" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+					<h3 class="text-3xl sm:text-4xl font-black mb-3">🐘</h3>
+					<h4 class="text-2xl font-black mb-3">Mastodon</h4>
+					<p class="text-white/90">Discussions décentralisées et sécurisées</p>
+				</a>
+			</div>
+		</div>
+	</section>
 </div>
