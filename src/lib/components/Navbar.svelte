@@ -83,7 +83,7 @@
 		<div class="flex items-center gap-4">
 			<!-- CTA Button (Hidden on small screens) -->
 			<button
-				class="hidden sm:block px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-200"
+				class="hidden sm:block px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:scale-105 transition-all duration-200"
 			>
 				En direct
 			</button>
@@ -123,7 +123,7 @@
 				Ligne éditoriale
 			</a>
 			<button
-				class="w-full px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-200 mt-2"
+				class="w-full px-6 py-2 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold rounded-lg hover:scale-105 transition-all duration-200 mt-2"
 			>
 				En direct
 			</button>
