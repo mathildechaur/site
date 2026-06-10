@@ -111,7 +111,7 @@
 	<ArtistCarousel />
 
 	<!-- Social Networks Section -->
-	<section class="py-16 sm:py-20 md:py-24 px-3 sm:px-4 md:px-8 bg-gradient-to-b from-slate-900 to-slate-800">
+	<section id="social-networks" class="py-16 sm:py-20 md:py-24 px-3 sm:px-4 md:px-8 bg-gradient-to-b from-slate-900 to-slate-800">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12 sm:mb-16">
 				<h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">NOS RÉSEAUX</h2>

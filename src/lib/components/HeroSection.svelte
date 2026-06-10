@@ -62,11 +62,11 @@
 			>
 				Écouter en direct
 			</button>
-			<button
-				class="px-8 py-4 bg-slate-700/50 text-white font-bold rounded-xl border border-slate-600 hover:border-pink-500 transition-colors duration-200"
+			<a href="#social-networks"
+				class="text-center inline-block px-8 py-4 bg-slate-700/50 text-white font-bold rounded-xl border border-slate-600 hover:border-pink-500 transition-colors duration-200"
 			>
 				Découvrir
-			</button>
+			</a>
 		</div>
 	</div>
 
