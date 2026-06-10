@@ -118,14 +118,20 @@
 				<div class="w-24 sm:w-32 h-1.5 bg-gradient-to-r from-pink-500 to-blue-600 mx-auto"></div>
 			</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
 				<a href="https://www.instagram.com/pollaris.webradio/" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
 					<h3 class="text-3xl sm:text-4xl font-black mb-3">📸</h3>
 					<h4 class="text-2xl font-black mb-3">Instagram</h4>
 					<p class="text-white/90">Suivez nos actualités, stories et contenus visuels</p>
 				</a>
 
-				<a href="https://mastodon.social/@pollariswebradio" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+				<a href="https://www.facebook.com/profile.php?id=61583572569805" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
+					<h3 class="text-3xl sm:text-4xl font-black mb-3">f</h3>
+					<h4 class="text-2xl font-black mb-3">Facebook</h4>
+					<p class="text-white/90">Partagez et discutez avec notre communauté</p>
+				</a>
+
+				<a href="https://mastodon.social/@pollariswebradio" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-br from-cyan-600 to-teal-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105">
 					<h3 class="text-3xl sm:text-4xl font-black mb-3">🐘</h3>
 					<h4 class="text-2xl font-black mb-3">Mastodon</h4>
 					<p class="text-white/90">Discussions décentralisées et sécurisées</p>
