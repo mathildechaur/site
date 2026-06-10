@@ -44,7 +44,7 @@
 		const pattern = [];
 		let artistIndex = 0;
 
-		for (let i = 0; i < 6; i++) {
+		for (let i = 0; i < 2; i++) {
 			// GRAND
 			pattern.push({
 				type: 'large' as const,
