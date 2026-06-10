@@ -35,7 +35,7 @@
 
 <div
 	bind:this={hero}
-	class="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800"
+	class="relative h-[55vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-slate-800"
 >
 	<!-- Background -->
 	<div class="absolute inset-0 bg-slate-900"></div>
@@ -46,12 +46,12 @@
 			bind:this={titleRef}
 			src="/assets/header.png"
 			alt="Pollaris"
-			class="w-full max-w-sm sm:max-w-md md:max-w-2xl h-auto mx-auto mb-4 sm:mb-6"
+			class="w-full max-w-xs sm:max-w-sm md:max-w-lg h-auto mx-auto mb-3 sm:mb-4"
 		/>
 
 		<p
 			bind:this={subtitleRef}
-			class="text-lg sm:text-xl md:text-3xl text-slate-300 font-light mb-8 sm:mb-12"
+			class="text-base sm:text-lg md:text-2xl text-slate-300 font-light mb-6 sm:mb-8"
 		>
 			La radio qui vous guide
 		</p>
