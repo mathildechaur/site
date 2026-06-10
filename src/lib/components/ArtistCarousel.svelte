@@ -12,14 +12,14 @@
 	}
 
 	const artists: Artist[] = [
-		{ name: 'Studio', role: 'Voice', image: '/assets/post2.jpg' },
-		{ name: 'Céline', role: 'Animatrice', image: '/assets/Notre-équipe.jpg' },
-		{ name: 'Matéo', role: 'DJ', image: '/assets/post1-part1.jpg' },
-		{ name: 'Mathilde', role: 'Créative', image: '/assets/post3-part1.jpg' },
-		{ name: 'Guest', role: 'Podcast', image: '/assets/citation.jpg' },
-		{ name: 'Voices', role: 'Mix', image: '/assets/post3-part2.jpg' },
-		{ name: 'Podcast', role: 'Story', image: '/assets/post1-part2.jpg' },
-		{ name: 'Mix', role: 'Beat', image: '/assets/post3-part3.jpg' }
+		{ name: 'Angèle', role: 'Artiste', image: '/assets/angele.jpg' },
+		{ name: 'Lisa', role: 'Artiste', image: '/assets/lisa.jpg' },
+		{ name: 'Orelsan', role: 'Artiste', image: '/assets/orelsan.jpg' },
+		{ name: 'Pomme', role: 'Artiste', image: '/assets/pomme-.jpeg' },
+		{ name: 'Solann', role: 'Artiste', image: '/assets/solann.jpg' },
+		{ name: 'Stromae', role: 'Artiste', image: '/assets/stromae.jpg' },
+		{ name: 'Suzane', role: 'Artiste', image: '/assets/suzane.png' },
+		{ name: 'Youssoupha', role: 'Artiste', image: '/assets/youssoupha.jpg' }
 	];
 
 	let scrollContainer: HTMLElement;
