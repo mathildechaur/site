@@ -19,7 +19,9 @@
 		{ name: 'Solann', role: 'Artiste', image: '/assets/solann.jpg' },
 		{ name: 'Stromae', role: 'Artiste', image: '/assets/stromae.jpg' },
 		{ name: 'Suzane', role: 'Artiste', image: '/assets/suzane.png' },
-		{ name: 'Youssoupha', role: 'Artiste', image: '/assets/youssoupha.jpg' }
+		{ name: 'Youssoupha', role: 'Artiste', image: '/assets/youssoupha.jpg' },
+		{ name: 'Rihanna', role: 'Artiste', image: '/assets/rihanna.jpg' },
+		{ name: 'Sheldon', role: 'Artiste', image: '/assets/sheldon.jpg' }
 	];
 
 	let scrollContainer: HTMLElement;
