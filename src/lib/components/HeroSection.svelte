@@ -70,8 +70,8 @@
 		</div>
 	</div>
 
-	<!-- Bottom indicator -->
-	<div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+	<!-- Bottom indicator - flux normal, en dessous des boutons -->
+	<div class="relative z-10 pt-6 sm:pt-8 md:pt-10 pb-6 sm:pb-8 md:pb-10">
 		<div class="animate-bounce" style="animation-duration: 2s">
 			<svg class="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
