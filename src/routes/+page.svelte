@@ -109,4 +109,54 @@
 
 	<!-- Artist Carousel Section -->
 	<ArtistCarousel />
+
+	<!-- Social Networks Section -->
+	<section class="relative py-16 sm:py-20 md:py-24 px-3 sm:px-4 md:px-8 bg-gradient-to-b from-slate-900 to-slate-800">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12 sm:mb-16 md:mb-20">
+				<h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-4">NOS RÉSEAUX</h2>
+				<div class="w-24 sm:w-32 h-1.5 bg-gradient-to-r from-pink-500 to-blue-600 mx-auto"></div>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
+				<!-- Instagram Card -->
+				<a
+					href="https://www.instagram.com/pollaris.webradio/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+					data-animate
+				>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-3xl font-black">Instagram</h3>
+						<svg class="w-12 h-12 opacity-80 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849s.013-3.583.07-4.849c.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.646-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+						</svg>
+					</div>
+					<p class="text-white/80 group-hover:text-white transition-colors">
+						Suivez nos actualités, stories et contenus visuels
+					</p>
+				</a>
+
+				<!-- Mastodon Card -->
+				<a
+					href="https://mastodon.social/@pollariswebradio"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="group bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105"
+					data-animate
+				>
+					<div class="flex items-center justify-between mb-4">
+						<h3 class="text-3xl font-black">Mastodon</h3>
+						<svg class="w-12 h-12 opacity-80 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M23.268 5.313c.35-2.615.686-6.268-1.276-7.039C19.881.842 19.5 4.6 19.5 4.6c-.784-.053-1.6-.173-2.473-.365 2.201-.988 4.408.753 4.238 2.65-.184 2.522-2.929 4.785-5.666 4.978 3.215.462 4.552 3.456 3.596 5.75-.531 1.624-1.956 2.471-3.368 2.471a3.53 3.53 0 0 1-.946-.135c3.477.76 4.844 3.82 4.021 6.031-.connector 1.624-1.956 2.471-3.368 2.471-.5 0-.952-.091-1.406-.23 2.514.939 5.868 1.24 8.276-.424 3.282-2.188 3.657-7.402.661-10.726.19 1.214.738 2.337 1.341 2.62 1.557.618 3.606.406 5.355-1.235 2.27-2.156 2.613-5.793 2.9-7.781z"/>
+						</svg>
+					</div>
+					<p class="text-white/80 group-hover:text-white transition-colors">
+						Discussions décentralisées et sécurisées
+					</p>
+				</a>
+			</div>
+		</div>
+	</section>
 </div>
