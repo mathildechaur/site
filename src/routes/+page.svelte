@@ -57,14 +57,38 @@
 				image="/assets/micro-trottoir-minia.jpg"
 			/>
 
-			<!-- Show Card (4) -->
-			<PodcastCard
-				title="BEATS"
-				subtitle="Electronic Mix"
-				color="bg-blue-600"
-				emoji="♫"
-				dataAnimate={true}
-			/>
+			<!-- Kithara Playlist Card (4) -->
+			<div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 cursor-pointer group" data-animate>
+				<div class="flex items-stretch h-full">
+					<!-- Image on the left -->
+					<div class="w-1/3 md:w-2/5 flex-shrink-0 overflow-hidden">
+						<img src="/assets/playlist.jpg" alt="Kithara Playlist" class="w-full h-full object-cover" />
+					</div>
+
+					<!-- Content on the right -->
+					<div class="flex-1 p-6 md:p-8 flex flex-col justify-between">
+						<div>
+							<p class="text-white/70 text-xs font-semibold uppercase tracking-wider mb-1">
+								Playlist
+							</p>
+							<h3 class="text-2xl md:text-3xl font-black leading-tight">
+								Kithara
+							</h3>
+						</div>
+
+						<div class="flex items-center gap-3">
+							<button
+								class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
+							>
+								<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M8 5v14l11-7z" />
+								</svg>
+							</button>
+							<span class="text-xs font-semibold text-white/60">PLAY</span>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<!-- Call to Action (5) -->
 			<a
