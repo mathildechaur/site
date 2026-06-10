@@ -19,7 +19,7 @@
 	<!-- Hero Section -->
 	<div class="pt-24 sm:pt-32 px-3 sm:px-4 md:px-8 pb-12 sm:pb-16">
 		<div class="max-w-4xl mx-auto text-center" data-animate>
-			<h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-4 sm:mb-6 bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent leading-tight">
+			<h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-4 sm:mb-6 bg-gradient-to-r from-pink-400 to-blue-400 bg-clip-text text-transparent leading-relaxed pb-4">
 				Ligne Éditoriale
 			</h1>
 			<p class="text-xl sm:text-2xl font-bold text-pink-400 mb-4">
