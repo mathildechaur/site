@@ -58,7 +58,7 @@
 			/>
 
 			<!-- Kithara Playlist Card (4) -->
-			<div class="bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 cursor-pointer group" data-animate>
+			<div class="rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 cursor-pointer group" style="background-color: #190B28;" data-animate>
 				<div class="flex items-stretch h-full">
 					<!-- Image on the left -->
 					<div class="w-1/3 md:w-2/5 flex-shrink-0 overflow-hidden">
