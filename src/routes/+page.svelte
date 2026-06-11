@@ -17,6 +17,33 @@
 			stagger: 0.1,
 			ease: 'power2.out'
 		});
+
+		// Hover animation pour les cartes playlist et interview
+		const cards = container.querySelectorAll('[data-hover-animate]');
+		cards.forEach((card) => {
+			const tl = gsap.timeline({ paused: true });
+			tl.to(
+				card,
+				{
+					y: -10,
+					duration: 0.3,
+					ease: 'power2.out'
+				},
+				0
+			).to(
+				card.querySelector('[data-icon]'),
+				{
+					scale: 1.2,
+					rotation: 5,
+					duration: 0.3,
+					ease: 'power2.out'
+				},
+				0
+			);
+
+			card.addEventListener('mouseenter', () => tl.play());
+			card.addEventListener('mouseleave', () => tl.reverse());
+		});
 	});
 </script>
 
@@ -58,7 +85,11 @@
 			/>
 
 			<!-- Kithara Playlist Card (4) -->
-			<div class="rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 cursor-pointer group" style="background-color: #190B28;" data-animate>
+			<a
+				href="https://www.mixcloud.com/Infocoml3/pollaris-webradio-playlist-kithara-mathilde-chaurreau/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 cursor-pointer group block" style="background-color: #190B28;" data-animate data-hover-animate>
 				<div class="flex items-stretch h-full">
 					<!-- Image on the left -->
 					<div class="w-1/3 md:w-2/5 flex-shrink-0 overflow-hidden">
@@ -79,6 +110,7 @@
 						<div class="flex items-center gap-3">
 							<button
 								class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
+								data-icon
 							>
 								<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
 									<path d="M8 5v14l11-7z" />
@@ -88,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 
 			<!-- Call to Action (5) -->
 			<a
@@ -97,6 +129,7 @@
 				rel="noopener noreferrer"
 				class="md:col-span-2 bg-pink-500 rounded-2xl overflow-hidden text-white shadow-2xl hover:shadow-3xl transition-shadow duration-300 group block"
 				data-animate
+				data-hover-animate
 			>
 				<div class="flex items-stretch h-full">
 					<!-- Image on the left -->
@@ -118,6 +151,7 @@
 						<div class="flex items-center gap-3">
 							<button
 								class="w-12 h-12 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center transition-colors duration-200 group-hover:bg-white/40"
+								data-icon
 							>
 								<svg class="w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24">
 									<path d="M8 5v14l11-7z" />
